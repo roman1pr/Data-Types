@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Student.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,100 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+   
+    
+    
+    BOOL boolVar = YES;
+    
+    NSInteger NSInt = 10;
+    
+    NSUInteger nsInt = 100;
+    
+    CGFloat cgfl = 1.5f;
+    
+    double doubvar = 2.0f;
+   
+    NSNumber* boolNumber = [NSNumber numberWithBool:boolVar];
+    NSNumber* Integern = [NSNumber numberWithInteger:NSInt];
+    
+    NSArray* arr = [[NSArray alloc] initWithObjects:boolNumber, Integern, nil];
+    
+    NSLog(@"%d %d",
+          [[arr objectAtIndex:0] boolValue],
+          [[arr objectAtIndex:1] integerValue]
+          );
+    
+    NSLog(@"%d %d %d %f %f",boolVar, NSInt, nsInt, cgfl, doubvar);
+    
+    
+    NSInteger a = 5;
+    
+    NSInteger *b = &a;
+    *b = 8;
+    
+    NSLog(@"%d %d", *b, a);
+    
+    self.st1 = [[Student alloc] init];
+    
+    self.st1.name = @"name of st1";
+    
+    Student *st2 = self.st1;
+    
+    NSLog(@"%@", self.st1.name);
+    
+    NSLog(@"%@", st2.name);
+    
+    NSInteger z1 = 0;
+    
+    [self test:a best:&z1];
+    
+    NSLog(@"%d",z1);
+    
+    [self.st1 setGender:ASGenderFemale];
+    
+    
+    CGPoint point;
+    
+    point = CGPointMake(3, 2);
+    
+    point.x = 5.4f;
+    point.y = 5;
+    
+    
+    
+    CGSize size;
+    
+    size.height = 12;
+    size.width = 13;
+    
+    CGRect rect;
+    
+    rect.origin = point;
+    rect.size = size;
+    
+    CGPoint point1 =   CGPointMake(3, 2);
+    CGPoint point2 =   CGPointMake(5, 6);
+    CGPoint point3 =   CGPointMake(8, 9);
+    
+    NSArray *arr2 = [[NSArray alloc] initWithObjects:
+        [NSValue valueWithCGPoint:point1],
+        [NSValue valueWithCGPoint:point2],
+        [NSValue valueWithCGPoint:point3],
+    nil];
+    
+    for (NSValue *value in arr2) {
+        CGPoint p = [value CGPointValue];
+        NSLog(@"%@", NSStringFromCGPoint(p));
+    }
+    
     return YES;
+}
+
+-(int) test:(NSInteger ) var1 best:(NSInteger *) var2{
+    
+    *var2 = 6;
+    return var1;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -14,6 +14,7 @@
 		30B273711ABDB2A30069A0BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B273701ABDB2A30069A0BE /* Images.xcassets */; };
 		30B273741ABDB2A30069A0BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B273721ABDB2A30069A0BE /* LaunchScreen.xib */; };
 		30B273801ABDB2A30069A0BE /* Data_TypesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2737F1ABDB2A30069A0BE /* Data_TypesTests.m */; };
+		30CD35D31ABDB960007E7DFB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CD35D21ABDB960007E7DFB /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		30B273791ABDB2A30069A0BE /* Data TypesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Data TypesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2737E1ABDB2A30069A0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B2737F1ABDB2A30069A0BE /* Data_TypesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Data_TypesTests.m; sourceTree = "<group>"; };
+		30CD35D21ABDB960007E7DFB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		30CD35D41ABDB96C007E7DFB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				30B273701ABDB2A30069A0BE /* Images.xcassets */,
 				30B273721ABDB2A30069A0BE /* LaunchScreen.xib */,
 				30B273631ABDB2A30069A0BE /* Supporting Files */,
+				30CD35D21ABDB960007E7DFB /* Student.m */,
+				30CD35D41ABDB96C007E7DFB /* Student.h */,
 			);
 			path = "Data Types";
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				30B2736C1ABDB2A30069A0BE /* ViewController.m in Sources */,
 				30B273691ABDB2A30069A0BE /* AppDelegate.m in Sources */,
 				30B273661ABDB2A30069A0BE /* main.m in Sources */,
+				30CD35D31ABDB960007E7DFB /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Data Types/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Data Types/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +420,7 @@
 				30B273851ABDB2A30069A0BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30B273861ABDB2A30069A0BE /* Build configuration list for PBXNativeTarget "Data TypesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				30B273881ABDB2A30069A0BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
