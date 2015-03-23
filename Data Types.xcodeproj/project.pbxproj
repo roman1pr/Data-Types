@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3001A3CB1AC04711001C453B /* home.m in Sources */ = {isa = PBXBuildFile; fileRef = 3001A3CA1AC04711001C453B /* home.m */; };
 		30B273661ABDB2A30069A0BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B273651ABDB2A30069A0BE /* main.m */; };
 		30B273691ABDB2A30069A0BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B273681ABDB2A30069A0BE /* AppDelegate.m */; };
 		30B2736C1ABDB2A30069A0BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2736B1ABDB2A30069A0BE /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3001A3CA1AC04711001C453B /* home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = home.m; sourceTree = "<group>"; };
+		3001A3CC1AC0471A001C453B /* home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = home.h; sourceTree = "<group>"; };
 		30B273601ABDB2A30069A0BE /* Data Types.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Data Types.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B273641ABDB2A30069A0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B273651ABDB2A30069A0BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				30B273631ABDB2A30069A0BE /* Supporting Files */,
 				30CD35D21ABDB960007E7DFB /* Student.m */,
 				30CD35D41ABDB96C007E7DFB /* Student.h */,
+				3001A3CA1AC04711001C453B /* home.m */,
+				3001A3CC1AC0471A001C453B /* home.h */,
 			);
 			path = "Data Types";
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3001A3CB1AC04711001C453B /* home.m in Sources */,
 				30B2736C1ABDB2A30069A0BE /* ViewController.m in Sources */,
 				30B273691ABDB2A30069A0BE /* AppDelegate.m in Sources */,
 				30B273661ABDB2A30069A0BE /* main.m in Sources */,

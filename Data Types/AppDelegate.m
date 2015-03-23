@@ -34,12 +34,15 @@
    
     NSNumber* boolNumber = [NSNumber numberWithBool:boolVar];
     NSNumber* Integern = [NSNumber numberWithInteger:NSInt];
+    NSNumber* cgfloat = [NSNumber numberWithFloat:cgfl];
     
-    NSArray* arr = [[NSArray alloc] initWithObjects:boolNumber, Integern, nil];
     
-    NSLog(@"%d %d",
+    NSArray* arr = [[NSArray alloc] initWithObjects:boolNumber, Integern, cgfloat, nil];
+    
+    NSLog(@"%d %d %f",
           [[arr objectAtIndex:0] boolValue],
-          [[arr objectAtIndex:1] integerValue]
+          [[arr objectAtIndex:1] integerValue],
+          [[arr objectAtIndex:2] floatValue]
           );
     
     NSLog(@"%d %d %d %f %f",boolVar, NSInt, nsInt, cgfl, doubvar);
@@ -90,19 +93,47 @@
     rect.origin = point;
     rect.size = size;
     
-    CGPoint point1 =   CGPointMake(3, 2);
-    CGPoint point2 =   CGPointMake(5, 6);
+    CGPoint point1 =   CGPointMake(4, 5);
+    CGPoint point2 =   CGPointMake(5, 5);
     CGPoint point3 =   CGPointMake(8, 9);
+    CGPoint point4 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
+    CGPoint point5 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
+    CGPoint point6 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
+    CGPoint point7 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
+    CGPoint point8 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
+    CGPoint point9 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
+    CGPoint point10 = CGPointMake(arc4random_uniform(30), arc4random_uniform(30));
     
     NSArray *arr2 = [[NSArray alloc] initWithObjects:
         [NSValue valueWithCGPoint:point1],
         [NSValue valueWithCGPoint:point2],
         [NSValue valueWithCGPoint:point3],
+        [NSValue valueWithCGPoint:point4],
+        [NSValue valueWithCGPoint:point5],
+        [NSValue valueWithCGPoint:point6],
+        [NSValue valueWithCGPoint:point7],
+        [NSValue valueWithCGPoint:point8],
+        [NSValue valueWithCGPoint:point9],
     nil];
     
     for (NSValue *value in arr2) {
         CGPoint p = [value CGPointValue];
         NSLog(@"%@", NSStringFromCGPoint(p));
+    }
+    
+    
+    // hometask p2
+    
+    
+    CGRect center = CGRectMake(3, 3, 3, 3);
+    
+    
+    for (NSValue* value in arr2) {
+        CGPoint point = [value CGPointValue];
+        if (CGRectContainsPoint(center, point)){
+            NSLog(@"Point in!");
+        }
+        
     }
     
     return YES;
